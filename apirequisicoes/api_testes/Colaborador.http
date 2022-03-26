@@ -1,0 +1,44 @@
+# Obter a lista de usuários
+GET http://localhost:3000/api/colaboradores
+Content-Type: application/json
+###
+
+# Inserir colaborador
+POST http://localhost:3000/api/colaboradores
+Content-Type: application/json
+
+{
+ "nome": "Pedro",
+ "email": "pedro@upf.br",
+ "senha": "1234"
+}
+###
+
+# Alterar colaborador
+PUT http://localhost:3000/api/colaboradores
+Content-Type: application/json
+
+{
+ "_id": "6235427787f12f993a2b4353",
+ "nome": "Jaqson alterado",
+ "email": "jaqson@teste.com"
+}
+###
+
+
+# Excluir um colaborador
+DELETE http://localhost:3000/api/colaboradores/6235427787f12f993a2b4353
+Content-Type: application/json
+###
+
+
+# Obter pelo id de colaborador
+GET http://localhost:3000/api/colaboradores/6235438bc80a510ddfa1de8b
+Content-Type: application/json
+###
+
+
+# Obter colaboradores filtrando
+GET http://localhost:3000/api/colaboradores/filtro/Pedro
+Content-Type: application/json
+###
