@@ -7,3 +7,7 @@ routes.use(cors({ origin: '*' }));
 const colaboradorRout = require("./ColaboradorRout");
 routes.use("/api", colaboradorRout);
 module.exports = routes;
+
+const tiporequisicaoRout = require("./TipoRequisicaoRout");
+routes.use("/api", tiporequisicaoRout);
+module.exports = routes;

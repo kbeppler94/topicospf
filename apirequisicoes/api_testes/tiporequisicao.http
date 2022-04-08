@@ -1,0 +1,39 @@
+# Obter a lista de tiporequisicao
+GET http://localhost:3000/tiporequisicao
+Content-Type: application/json
+###
+
+# Inserir novo tiporequisicao
+POST http://localhost:3000/tiporequisicao
+Content-Type: application/json
+
+{
+ "descricao": "Evento Inicia Amanha"
+}
+
+###
+
+# Alterar um tiporequisicao
+PUT http://localhost:3000/tiporequisicao
+Content-Type: application/json
+
+{
+ "_id": "622be7af9bf0b315b7652479",
+ "descricao": "O Aniversario da Kétlin é amanhã"
+}
+###
+
+# Excluir um tiporequisicao pelo id
+DELETE http://localhost:3000/tiporequisicao/622be7af9bf0b315b7652479
+Content-Type: application/json
+###
+
+# Obter tiporequisicao pelo id
+GET http://localhost:3000/tiporequisicao/622be4ff394b34dd04950aae
+Content-Type: application/json
+###
+
+# Obter tiporequisicao filtrando
+GET http://localhost:3000/tiporequisicao/filtro/João
+Content-Type: application/json
+###
